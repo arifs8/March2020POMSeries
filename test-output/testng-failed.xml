@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [My first automation suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <listeners>
+    <listener class-name="com.qa.hubspot.TestListner.ScreenshotListener"/>
+  </listeners>
+  <test thread-count="5" name="login page test(failed)" verbose="3">
     <classes>
-      <class name="com.qa.hubspot.tests.HomePageTest">
+      <class name="com.qa.hubspot.tests.LoginPageTest">
         <methods>
+          <include name="verifySingUpLink"/>
+          <include name="setUp"/>
+          <include name="verifyLoginpageTitleTest"/>
           <include name="tearDown"/>
-          <include name="veirfyHomePageTitle"/>
-          <include name="setup"/>
+          <include name="LoginPageTest1"/>
         </methods>
-      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- login page test(failed) -->
+</suite> <!-- Failed suite [My first automation suite] -->

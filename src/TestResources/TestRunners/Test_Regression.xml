@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="My first automation suite" thread-count="2" parallel= "tests">
+<suite name="My first automation suite" verbose="3">
+
+   <listeners>  
+		<!--<listener class-name="com.qa.hubspot.TestListner.ExtentReportListener" /> 	
+		 <listener class-name="com.qa.hubspot.TestListner.pdfListener" /> 	
+		  <listener class-name="com.qa.hubspot.TestListner.TestAllureListener" /> 
+		  <listener class-name="com.qa.hubspot.TestListner.TesultsListener" /> 
+		  <listener class-name="com.qa.hubspot.TestListner.ScreenshotListener" /> -->
+	</listeners>
+  
   <test name="login page test">
     <classes>
       <class name="com.qa.hubspot.tests.LoginPageTest"/>
     </classes>
   </test> 
   
-  <test name="home page test">
+  <!--   <test name="home page test">
     <classes>
       <class name="com.qa.hubspot.tests.HomePageTest"/>
     </classes>
   </test>
+  
+  
+  <test name="Contact page test">
+    <classes>
+      <class name="com.qa.hubspot.tests.ContactPageTest"/>
+    </classes>
+  </test> -->
   
 </suite> 
