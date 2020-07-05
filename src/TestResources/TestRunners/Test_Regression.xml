@@ -6,8 +6,8 @@
 		<!--<listener class-name="com.qa.hubspot.TestListner.ExtentReportListener" /> 	 -->
 		<!-- <listener class-name="com.qa.hubspot.TestListner.pdfListener" /> -->
 		  <listener class-name="com.qa.hubspot.TestListner.TestAllureListener" /> 
-		 <!--  <listener class-name="com.qa.hubspot.TestListner.TesultsListener" /> 
-		  <listener class-name="com.qa.hubspot.TestListner.ScreenshotListener" /> -->
+		  <listener class-name="com.qa.hubspot.TestListner.TesultsListener" /> 
+		<!--   <listener class-name="com.qa.hubspot.TestListner.ScreenshotListener" /> -->
 	</listeners>
   
   <test name="login page test">
