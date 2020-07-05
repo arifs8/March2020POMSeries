@@ -3,7 +3,7 @@
 <suite name="My first automation suite" verbose="3">
 
    <listeners>  
-		<listener class-name="com.qa.hubspot.TestListner.ExtentReportListener" /> 	
+		<!--<listener class-name="com.qa.hubspot.TestListner.ExtentReportListener" /> 	 -->
 		<!-- <listener class-name="com.qa.hubspot.TestListner.pdfListener" /> -->
 		  <listener class-name="com.qa.hubspot.TestListner.TestAllureListener" /> 
 		 <!--  <listener class-name="com.qa.hubspot.TestListner.TesultsListener" /> 
