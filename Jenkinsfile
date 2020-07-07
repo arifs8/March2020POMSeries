@@ -2,7 +2,7 @@ pipeline {
   agent any
   stages {
     stage('Test Rub On Dev') {
-      parallel {
+      
         stage('Test Run On Dev') {
           steps {
             sh 'mvn clean install -Denv="dev"'
@@ -28,13 +28,12 @@ pipeline {
         }
         
        }
-      }
       
-       stage('') {
+       
           steps {
             sh 'echo "test execution is done"'
           }
-        }
+        
         
       }
      }
