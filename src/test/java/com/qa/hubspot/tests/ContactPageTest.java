@@ -48,5 +48,6 @@ public class ContactPageTest extends BaseTest {
 		contactPage.createContact(email, firstname, lastname, jobtitle, phonenumber);
 	}
 	
+	//just to push
 	
 }
